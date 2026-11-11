@@ -1,0 +1,14 @@
+{
+  "name": "agentops-ai-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CS4680 Assignment 4 - a safe, auditable AI action agent",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
