@@ -23,5 +23,3 @@ This project is Vercel-compatible: import the repository, deploy, then add `GROQ
 - The API action is restricted to the public GitHub repository endpoint and validates owner/repository names.
 - Deletion is always marked as requiring confirmation and is blocked until the UI confirms it.
 - Every request records the input, planner mode, plan, result, status, and duration.
-
-Reference walkthrough: https://youtu.be/wcS2QUXKeP4
