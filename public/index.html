@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgentOps | CS4680 AI Agent</title><link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><div class="brand"><span class="brand-mark">✦</span><div><strong>AgentOps</strong><small>CS4680 AI Agent Project</small></div></div><div class="status"><span class="dot"></span><span id="modeLabel">Checking provider…</span></div></header>
+    <section class="hero"><div><p class="eyebrow">Prompt → Plan → Action</p><h1>Turn plain English into <em>safe, useful work.</em></h1><p class="lede">AgentOps interprets a request, validates a structured action plan, executes approved operations across notes, files, system tools, and public APIs, then records an audit trail.</p></div><div class="hero-card"><span class="card-label">Safety policy</span><strong>Allowlist enforced</strong><span>Destructive actions pause for confirmation.</span></div></section>
+    <section class="workspace">
+      <div class="panel composer"><div class="panel-head"><div><span class="section-kicker">01 / Request</span><h2>What should I do?</h2></div><span class="pill">Natural language</span></div><textarea id="input" maxlength="500" placeholder="Try: Create a note to review prompt engineering tomorrow."></textarea><div class="examples"><button data-example="Create a note to review prompt engineering tomorrow.">Create note</button><button data-example="Calculate 48 * 19 + 7.">Calculate</button><button data-example="Create a file named demo.txt.">Create file</button><button data-example="Show system information.">System info</button><button data-example="Get GitHub repo vercel/next.js.">GitHub API</button><button data-example="List my notes.">List notes</button><button data-example="What time is it?">Get time</button></div><button class="run" id="run">Run agent <span>⌘ ↵</span></button><p class="hint">Your request is processed on the server. No key is needed for demo mode.</p></div>
+      <div class="panel result"><div class="panel-head"><div><span class="section-kicker">02 / Execution</span><h2>Agent result</h2></div><span id="resultState" class="pill muted">Waiting</span></div><div id="empty" class="empty"><div class="empty-icon">◎</div><strong>Your result will appear here</strong><span>Start with one of the example requests.</span></div><div id="output" hidden><div class="summary" id="summary"></div><div class="subhead">Action plan</div><div id="plan"></div><div class="subhead">Execution</div><div id="results"></div></div></div>
+    </section>
+    <section class="bottom-grid"><div class="panel"><div class="panel-head"><div><span class="section-kicker">03 / Memory</span><h2>Notes</h2></div><span id="noteCount" class="count">0</span></div><div id="notes" class="notes"></div></div><div class="panel"><div class="panel-head"><div><span class="section-kicker">04 / Audit</span><h2>Activity log</h2></div><span class="pill muted">Recent</span></div><div id="audit" class="audit"></div></div></section>
+    <footer><span>Built for CS4680 Assignment 4</span><a href="https://youtu.be/wcS2QUXKeP4" target="_blank" rel="noreferrer">Reference walkthrough ↗</a></footer>
+  </main><script src="/app.js"></script>
+</body></html>
